@@ -43,10 +43,11 @@ async def open_shop(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def show_instruction(update: Update, context: ContextTypes.DEFAULT_TYPE):
     instruction_text = (
         " ♛ **Как пользоваться магазином**\n\n"
-        "1. Нажми на кнопку **«𒂭 Открыть магазин»** внизу экрана.\n"
-        "2. Внутри мини-приложения выбери нужную услугу.\n"
-        "3. Нажми **«Купить»** — оплата проходит через Юkassa/СБП.\n"
-        "4. После оплаты ты получишь доступ к услуге.\n\n"
+        "1. Для корректного использования магазина включи VPN.\n"
+        "2. Нажми на кнопку **«𒂭 Открыть магазин»** внизу экрана.\n"
+        "3. Внутри мини-приложения выбери нужную услугу.\n"
+        "4. Нажми **«Купить»** — оплата проходит через Юkassa/СБП.\n"
+        "5. После оплаты ты получишь доступ к услуге.\n\n"
         "♛ Спасибо, что выбираете Homonovski Market."
     )
     await update.message.reply_text(instruction_text, parse_mode="Markdown", reply_markup=main_keyboard)
